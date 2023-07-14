@@ -3,11 +3,103 @@
     margin: 0;
     box-sizing: border-box;
 }
-html,
+/* html,
 body{
     width: 100%;
     height: 100vh;
+} */
+#container{
+    padding: 30px 100px;
 }
+#nav{
+    display: flex;
+    justify-content: space-between;align-items: center;
+    padding: 0 35px;
+}
+#navList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+li{
+    list-style: none;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    padding: 40px;
+}
+main #discount{
+    background-color: rgb(22,159,40);
+    width: fit-content;
+    padding: 1%;
+    color: white;
+}
+main p{
+    font-size: 14px;
+    font-weight: 600;
+}
+main #explore-btn{
+    background-color: #EC9300;
+    width: fit-content;
+    padding: 1%;
+    color: white;
+    transition:.2s ease-in;
+}
+#features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+}
+.feat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.feattext{
+    margin-left: 20px;
+    padding: 30px 0;
+}
+.feattext h2{
+    margin: 10px;
+}
+.feattext p{
+    font-size: small;
+    margin-left: 10px;
+}
+.bannerimg{
+    /* transition-property:transform;
+    transition-duration: 0.3s ;
+    transition-timing-function: ease;
+    transition-delay: ; */
+
+    transition: transform .3s ease-in-out ;
+}
+.bannerimg:hover{
+    transform:rotate(5deg) ;
+}
+main #explore-btn:hover{
+      background-color: aliceblue;  
+      color: #EC9300;
+}
+
+
+
+
+
+
 #menu-btn{
     background-color: #149F39;
     color: #fff;
