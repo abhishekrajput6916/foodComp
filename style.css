@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html,
+body{
+    width: 100%;
+    height: 100vh;
+} */
+@media (max-width:1000px) {
+    #container {
+        width: 100vw;
+        padding: 0;
+    }
+}
+
+#container {
+    padding: 30px 100px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+#navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bannerimg {
+    /* transition-property:transform;
+    transition-duration: 0.3s ;
+    transition-timing-function: ease;
+    transition-delay: ; */
+    transition: transform .3s ease-in-out;
+}
+
+.bannerimg img {
+    width: 500px;
+}
+
+.bannerimg:hover {
+    transform: rotate(5deg);
+}
+
+@media (max-width:1100px) {
+    #banner {
+        flex-wrap: wrap;
+    }
+
+    #main {
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+    }
+}
+
+@media (max-width:900px) {
+
+    /* min-width:; */
+    #features {
+        flex-wrap: wrap;
+    }
+
+    #banner {
+        flex-wrap: wrap;
+    }
+}
+
+main {
+    padding: 40px;
+}
+
+main #discount {
+    background-color: rgb(22, 159, 40);
+    width: fit-content;
+    padding: 1%;
+    color: white;
+}
+
+main h1,
+p {
+    margin: 2% 0;
+}
+
+main p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main #explore-btn {
+    background-color: #EC9300;
+    width: fit-content;
+    padding: 1%;
+    color: white;
+    transition: .2s ease-in;
+}
+
+main #explore-btn:hover {
+    background-color: aliceblue;
+    color: #EC9300;
+}
+
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+
+}
+
+#section2 {
+    transition: 1s ease;
+}
+
+.feat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.feattext {
+    /* margin-left: 20px; */
+    padding: 30px 0;
+}
+
+.feattext h2 {
+    margin: 10px;
+}
+
+.feattext p {
+    font-size: small;
+    margin-left: 10px;
+}
+
+#menu-btn,
+#menu-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+}
+
+#menu-head {
+    font-size: larger;
+}
+
+#menu-btn a {
+    background-color: rgb(22, 159, 40);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 1%;
+}
+
+#footer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(254, 234, 234);
+    margin: 3% 0;
+}
+
+.company {
+    color: rgb(100, 104, 104);
+    margin-left: 20px;
+
+}
+
+.company h3 {
+    text-align: center;
+}
+
+.links {
+    color: rgb(100, 104, 104);
+    margin: 30px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.links h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.links ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.support {
+    color: rgb(100, 104, 104);
+    margin: 30px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.support h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.support ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.contact {
+    color: rgb(100, 104, 104);
+    text-align: center;
+    margin: 30px;
+}
+.contact a{
+    margin: 0 2%;
+}
+
+.contact h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.contact input {
+    padding: 6px 20px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.contact h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 786px) {
+    .images-section img {
+        display: inline-block;
+        flex-direction: column-reverse;
+    }
+
+    #footer-section {
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+}
